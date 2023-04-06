@@ -1,0 +1,15 @@
+app:
+  name: poi-gateway-app
+  namespace: ryanj
+  cluster: .apps.cluster-2w7cf.2w7cf.sandbox1883.opentlc.com
+
+git:
+  branch: main
+  repo: https://github.com/backstage-2w7cf/ryanj-gateway
+  org: backstage-2w7cf
+  name: ryanj-gateway
+
+image:
+  host: image-registry.openshift-image-registry.svc:5000
+  name: ryanj/poi-gateway-app
+  tag: latest
